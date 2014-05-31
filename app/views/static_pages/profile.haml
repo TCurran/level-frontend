@@ -1,0 +1,120 @@
+= render "static_pages/nav"
+.row.container
+  /Sidebar
+  .large-4.columns.show-for-large-up 
+    = render "static_pages/sidebar_profile"
+
+  /Primary Content 
+  .large-8.columns
+    %dl.tabs.tabs--five{"data-equalizer" => "", "data-tab" => ""}
+      %dd.active.tabs_dl--first
+        %a{href: "#panel2-1"}
+          .meta.meta-light.show-for-medium-up Activity
+          = image_tag "activity.png", :class => "show-for-small-only"
+      %dd{"data-equalizer-watch" => ""}
+        %a{href: "#panel2-2"} 
+          .meta.meta-light.show-for-medium-up Points
+          %i.fa.fa-trophy.fa-orange.show-for-small-only
+      %dd{"data-equalizer-watch" => ""}
+        %a{href: "static_pages#profile_large"} 
+          .meta.meta-light.show-for-medium-up Media
+          %i.fa.fa-picture-o.fa-orange.show-for-small-only
+      %dd{"data-equalizer-watch" => ""}
+        %a{href: "#panel2-5"} 
+          .meta.meta-light.show-for-medium-up Challenges
+          %i.fa.fa-star.fa-orange.show-for-small-only
+      %dd{"data-equalizer-watch" => ""}
+        %a.dropdown{"data-dropdown" => "drop1", href: "1#", style: "font-size:12px; color:#9B9B9B"} 
+          .meta.meta-light.show-for-medium-up More
+          %i.fa.fa-ellipsis-h.fa-orange.show-for-small-only
+
+        %ul#drop1.f-dropdown{"data-dropdown-content" => ""}
+          %li
+            %a{href: "1#"} Option 1
+          %li
+            %a{href: "1#"} Option 2
+          %li
+            %a{href: "1#"} Option 3
+    .tabs-content
+      /Activity Feed
+      #panel2-1.content.active
+        .panel.panel--no-padding
+          .small-padding--rl-medium.small-padding--tb-small.border-bottom--orange
+            %h3 Activity Feed
+          = render "static_pages/post"
+      /Points
+      #panel2-2.content
+        .row.collapse
+          %a.button.dropdown.left.tiny.radius{"data-dropdown" => "drop2", href: "2#"}
+            Filter
+          %br/
+          %ul#drop2.f-dropdown{"data-dropdown-content" => ""}
+            %li
+              %a{href: "2#"} Option 1
+            %li
+              %a{href: "2#"} Option 2
+            %li
+              %a{href: "2#"} Option 3
+          .right.small-text-center
+            .meta.meta-light Points
+            .meta.meta-dark 0
+        /Points posts 
+        .row.collapse
+          .panel.panel--no-padding
+            .listing.clearfix
+              .row.collapse
+                .large-1.columns 
+                  = image_tag "User-default-post.png", :width => "56"
+                .large-9.columns
+                  .listing-body
+                    <strong>User Name</strong>
+                    %small Time Posted
+                    %p Checked into a challenge bla bla.
+                .large-2.columns
+                  .right.small-text-center
+                    .meta.meta-dark 0 
+      /Stats        
+      #panel2-3.content
+        %p Third panel content goes here...
+
+      /Media
+      #panel2-4.content
+        %p Fourth panel content goes here...
+
+      /Challenges
+      #panel2-5.content
+        .row.collapse
+          .large-4.columns
+            %a.button.dropdown.tiny.left.radius{"data-dropdown" => "drop3", href: "3#"}
+              Filter
+            %br/
+            %ul#drop3.f-dropdown{"data-dropdown-content" => ""}
+              %li
+                %a{href: "3#"} Option 1
+              %li
+                %a{href: "3#"} Option 2
+              %li
+                %a{href: "3#"} Option 3
+          .large-4.columns
+            .row.collapse
+              .small-9.columns
+                %input{placeholder: "Search...", type: "text"}/
+              .small-3.columns
+                %span.postfix Search
+        .row.collapse
+          .panel.panel--no-padding
+            %a{href: "#"}
+              .listing.listing--small
+                <strong>Challenge Name</strong>
+                <p>Challenge Description</p>
+            %a{href: "#"}
+              .listing.listing--small
+                <strong>Challenge Name</strong>
+                <p>Challenge Description</p>
+            %a{href: "#"}
+              .listing.listing--small.last
+                <strong>Challenge Name</strong>
+                <p>Challenge Description</p>
+      /More
+      #panel2-6.content
+        %p Fourth panel content goes here...

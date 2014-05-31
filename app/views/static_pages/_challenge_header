@@ -1,0 +1,6 @@
+.row.container
+  .small-10.small-centered.columns
+    .panel.callout.radius--large.callout--large.container--full-padding
+      %h1.alpha
+        %strong Challenge Name
+      %h6.placeholder.meta-light Created by Username

@@ -1,0 +1,50 @@
+= render "static_pages/nav"
+.row.container
+  .small-10.small-centered.columns
+    .panel.callout.radius--large.callout--large.container--full-padding
+      %h1.alpha
+        %strong Challenge Name
+      %h6.placeholder.meta-light Created by Username
+      %br/
+      %h4 The content telling you what the challenge is about. 
+      %br/
+      %br/
+      .row
+        .small-12.medium-6.large-4.small-centered.columns
+          %a.button.radius.small.button--no-margin{href: "#", style: "margin-left:20px;"} Start 
+          %a.button.radius.small.right.button--no-margin.secondary--dark{href: "#", style: "margin-right:20px;"}
+            %i.fa.fa-pencil
+.row.collapse  
+  .small-8.small-centered.columns
+    /Alert box
+    .row.collapse
+      .alert-box.info.radius{"data-alert" => ""}
+        Your Challenge has been Published!  
+        %a.close{href: "#"} ×
+    /Start Task List
+    .panel.panel--no-padding
+      /Single Task Listing
+      .row.collapse
+        %a{href: "#"}
+          .listing.listing--medium.clearfix
+            .small-8.columns
+              %h4
+                %strong #Task Name
+              %p Task Description
+            .small-4.columns
+              %span.secondary.radius.right.label--medium.label.label--medium 
+                %h6.label--medium 
+                  %i.fa.fa-trophy  50pts
+
+      /Can be deleted - for example purposes only
+      .row.collapse
+        %a{href: "#"}
+          .listing.listing--medium.clearfix
+            .small-8.columns
+              %h4
+                %strong #Task Name
+              %p Task Description
+            .small-4.columns
+              %span.secondary.radius.right.label--medium.label.label--medium 
+                %h6.label--medium 
+                  %i.fa.fa-trophy  50pts  

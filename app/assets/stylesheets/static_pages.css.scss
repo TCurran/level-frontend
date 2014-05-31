@@ -1,0 +1,1187 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "level";
+  src:url("..fonts/level.eot");
+  src:url("..fonts/level.eot?#iefix") format("embedded-opentype"),
+    url("..fonts/level.woff") format("woff"),
+    url("..fonts/level.ttf") format("truetype"),
+    url("..fonts/level.svg#level") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "level" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "level" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fontawesome-webfont:before {
+  content: "a";
+}
+.icon-fontawesome-webfont-1:before {
+  content: "b";
+}
+.icon-fontawesome-webfont-2:before {
+  content: "c";
+}
+.icon-fontawesome-webfont-3:before {
+  content: "d";
+}
+.icon-fontawesome-webfont-4:before {
+  content: "e";
+}
+.icon-fontawesome-webfont-5:before {
+  content: "f";
+}
+.icon-fontawesome-webfont-6:before {
+  content: "g";
+}
+.icon-fontawesome-webfont-7:before {
+  content: "h";
+}
+.icon-fontawesome-webfont-8:before {
+  content: "i";
+}
+.icon-fontawesome-webfont-9:before {
+  content: "j";
+}
+.icon-fontawesome-webfont-10:before {
+  content: "k";
+}
+.icon-fontawesome-webfont-11:before {
+  content: "l";
+}
+.icon-fontawesome-webfont-12:before {
+  content: "m";
+}
+.icon-fontawesome-webfont-13:before {
+  content: "n";
+}
+.icon-fontawesome-webfont-14:before {
+  content: "o";
+}
+.icon-fontawesome-webfont-15:before {
+  content: "p";
+}
+.icon-fontawesome-webfont-16:before {
+  content: "q";
+}
+.icon-fontawesome-webfont-17:before {
+  content: "r";
+}
+.icon-fontawesome-webfont-18:before {
+  content: "s";
+}
+.icon-fontawesome-webfont-19:before {
+  content: "t";
+}
+.icon-fontawesome-webfont-20:before {
+  content: "u";
+}
+.icon-fontawesome-webfont-21:before {
+  content: "v";
+}
+.icon-fontawesome-webfont-22:before {
+  content: "w";
+}
+.icon-fontawesome-webfont-23:before {
+  content: "x";
+}
+.icon-fontawesome-webfont-24:before {
+  content: "y";
+}
+.icon-fontawesome-webfont-25:before {
+  content: "z";
+}
+.icon-fontawesome-webfont-26:before {
+  content: "A";
+}
+.icon-fontawesome-webfont-27:before {
+  content: "B";
+}
+.icon-barbell:before {
+  content: "C";
+}
+.icon-star:before {
+  content: "D";
+}
+.icon-bubble:before {
+  content: "E";
+}
+.icon-fontawesome-webfont-28:before {
+  content: "F";
+}
+.icon-fontawesome-webfont-29:before {
+  content: "G";
+}
+.icon-football:before {
+  content: "H";
+}
+.icon-soccer:before {
+  content: "I";
+}
+.icon-swimming-24:before {
+  content: "J";
+}
+.icon-users:before {
+  content: "K";
+}
+.icon-activity:before {
+  content: "L";
+}
+.icon-fontawesome-webfont-30:before {
+  content: "M";
+}
+.icon-fontawesome-webfont-31:before {
+  content: "N";
+}
+.icon-fontawesome-webfont-32:before {
+  content: "O";
+}
+.icon-fontawesome-webfont-33:before {
+  content: "P";
+}
+.icon-fontawesome-webfont-34:before {
+  content: "Q";
+}
+.icon-check-alt:before {
+  content: "R";
+}
+.icon-fontawesome-webfont-35:before {
+  content: "S";
+}
+.icon-fontawesome-webfont-36:before {
+  content: "T";
+}
+.icon-fontawesome-webfont-37:before {
+  content: "U";
+}
+
+.padding-right {
+  padding-right: 15px;
+} 
+
+.row.container {
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.panel.panel--no-padding {
+  padding:0px;
+}
+
+.panel .container--full-padding {
+  display:table;
+  padding:20px;
+  width:100%;
+}
+
+.container--text-padding {
+  padding-left:10px;
+  padding-top:6px;
+}
+
+.panel h5.no-margin-bottom, .panel h3.no-margin-bottom, input.no-margin-bottom, .listing p, .button.no-margin-bottom {
+  margin-bottom:0!important;
+}
+
+.meta {
+  font-size:12px;
+  text-transform: uppercase;
+}
+
+.meta--no-uppercase {
+  text-transform: none;
+}
+
+.meta-light {
+  color:#9B9B9B;
+}
+
+.meta-dark { 
+  color:#000;
+  font-size:14px;
+  font-weight:400;
+}
+
+.meta--inline{
+  padding-top: 1px;
+  padding-right: 4px;
+}
+
+.border-top--orange {
+  border-top: 2px solid #FFAC24;
+  margin-top:5px;
+}
+
+.module--header {
+  padding:10px 20px 3px 20px;
+}
+
+.module--link {
+  padding-top:4px;
+}
+
+.border-bottom--orange, .listing.border-bottom--orange {
+  border-bottom: 2px solid #FFAC24;
+}
+
+.bg-gray {
+  background: #F6F5F3;
+}
+
+table.sidebar{
+  width:100%;
+  margin-bottom:0;
+}
+
+iframe {
+  display:block;
+  position: relative;
+  min-width:250px;
+}
+
+.panel.callout {
+  border:none;
+  background: #F6F5F3;
+}
+
+.panel.callout--large {
+  padding:50px;
+}
+
+.radius--large {
+  border-radius: 6px;
+}
+
+/*------Listing ------*/
+.listing, a.listing {
+  width: 100%;
+  border-bottom:1px solid #CCCCCC;
+  color:#000;
+  padding:20px 20px;
+}
+
+.listing--small {
+  padding:10px 20px 9px;
+}
+
+.listing--small.last{
+  border-bottom:none;
+}
+
+.listing-body{
+  padding:6px 0 10px 20px;
+}
+
+.listing a {
+  padding-left:10px;
+}
+
+.listing--medium {
+  padding:16px 20px 15px;
+}
+
+.listing--large {
+  padding:20px 20px 19px;
+}
+
+.listing--large h5.left.center {
+  padding-top: 13px; 
+}
+
+.listing--large .right.center {
+  padding-top: 15px; 
+}
+
+.listing--small .left.center {
+  padding-top: 16px; 
+}
+
+.listing--small .right.center {
+  padding-top: 16px; 
+}
+
+.row.collapse > .columns.padding-left {
+  padding-left:20px;
+  padding-top:7px;
+}
+
+.listing--small a.block{
+  padding-left:0;
+  color:#000;
+}
+
+.listing--small a.button {
+  margin: 8px 0 0;
+}
+
+.listing.listing-medium ul, .listing.listing-medium ul li, .listing.listing-medium ul li a{
+  margin:0;
+  padding:0;
+  color:#000;
+}
+
+.listing.listing-medium ul li a.meta--inline-list{
+  color:#9B9B9B;
+  padding-left:10px;
+}
+/*--------
+ol.listing--list li {
+  padding: 10px 21px 0 21px;
+  border-bottom: 1px solid #ccc;
+}
+
+ol.listing--list {
+  list-style-position: inside;
+  margin-left:0px;
+}
+
+ol.listing--list a{
+  display: block;
+}
+---*/
+.block {
+  display: block;
+}
+
+
+/*----- Post--small ------*/
+
+.container--full-padding textarea.no-margin-bottom.post--small-trigger{
+  resize:none;
+  height:34px;
+  min-height: 34px;
+}
+
+small.post__ops {
+  z-index: 50;
+}
+
+/*----- tabs ----*/
+
+/*.tabs.tabs--no-bg dd > a {
+  background-color:none !important;
+  background: none !important;
+}
+
+.tabs.tabs--no-bg dd.active > a {
+  border-bottom:3px solid #FFAC24 !important;
+}
+
+.row.tabs--container {
+  border-bottom:1px solid #cccccc;
+}*/
+
+
+/*---Events -----*/
+/*--.panel.events {
+  background-image: url("events-main-bg.png")
+}--*/
+h2.date {
+  text-transform: uppercase;
+}
+
+.padding-left--small {
+  padding-left: 5px;
+}
+
+.padding-left--medium {
+  padding-left: 1rem;
+}
+
+/*---headers----*/
+h1.alpha {
+  font-size: 3.5rem;
+}
+
+.label--medium {
+  margin:11px 0;
+}
+
+.label--medium h6 {
+  margin:0;
+  padding:5px;
+}
+
+/*---icons----*/
+i.fa-orange {
+  color:#FFAC24;
+}
+
+i.fa-black {
+  color:#000;
+}
+
+i.fa-gray {
+  color:#999;
+}
+
+i.fa-light-gray {
+  color:#ccc6bb;
+}
+
+i.center, .center {
+ /*-- padding:10px 20px; ---*/
+ display: table;
+ text-align:center;
+ width:100%;
+}
+
+i.large{
+  font-size:2rem;
+  padding:15px 0 15px 5px;
+}
+
+i.medium{
+  font-size:1.5rem;
+  padding:1.6rem 0;
+}
+
+/*----forms----*/
+
+textarea.large {
+  height:100px;
+  resize:none;
+}
+
+/* --- Events single ----*/
+
+.full-width {
+  width:100%;
+  position:relative;
+  background-color: #fff;
+}
+
+.container--large {
+  padding:4rem 0;
+}
+
+strong.no-padding-bottom, h3.no-padding-bottom {
+  padding-bottom:0;
+}
+
+/*----Profile-----*/
+.form--tiny-dropdown {
+  margin-top:22px;
+}
+
+/*-----Notifications----*/
+.top-bar-section ul li.notifications {
+  background:#FFF;
+}
+
+.top-bar-section ul li.notifications a.block{
+  width:350px;
+  padding:0;
+}
+
+.top-bar-section li:not(.has-form) a.block:not(.button) {
+  background:#fff;
+  line-height:17px;
+}
+
+.top-bar-section li:not(.has-form) a.block:hover {
+  background:#f2f2f2;
+}
+
+ul .dropdown.notifications li a.block{
+  padding:0;
+}
+
+.top-bar-section .has-dropdown.not-click:hover > .dropdown.content {
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    3px 3px 10px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         3px 3px 10px 0px rgba(50, 50, 50, 0.3);
+}
+
+.orange {
+  background:#ffac24;
+}
+
+/* ------------------------------------------------------------ *
+    UTILITY CLASSES
+\* ------------------------------------------------------------ */
+
+.container {
+  width: 100%;
+}
+.centered{
+  text-align:center;
+  vertical-align: middle;
+}
+
+.no-margin {
+  margin:0;
+}
+
+/*-----------------------------------------------*
+This is to center content both vertically and 
+horizonally. Use .table on the parent container 
+then .center as a ghost wrapper and your content
+in the child element you want to center. 
+\*-----------------------------------------------*/
+
+.table {
+  display:table;
+}
+
+.table--full-width {
+  display:table;
+  width:100%;
+}
+
+.center {
+  display: table-cell;
+  text-align:center;
+  vertical-align: middle;
+}
+
+/*-----------------------------------------------*
+    BUTTONS
+\*-----------------------------------------------*/
+.secondary--dark {
+  background: #ccc6bb;
+  color:#000;
+}
+.button--no-margin {
+  margin:0;
+}
+
+
+/* ------------------------------------------------------------ *
+    TABS FOR PRIMARY SECTION - 5 tabs
+\* ------------------------------------------------------------ */
+
+dl.tabs.tabs--five {
+  dd {
+    width:20%;
+    border-right:1px solid #ccc;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    background-color: #FFF;
+  }
+  dd.tabs_dl--first {
+      border-left:1px solid #ccc;
+  }
+  dd.active a {
+    border-bottom:4px solid #FFAC24;
+    padding:20px 0 16px 0;
+  }
+  dd > a {
+    width:100%;
+    height:100%;
+    font-size: 13px;
+    vertical-align: middle;
+    text-align: center;
+    padding:20px 0;
+    background: #FFF;
+
+    .span {
+      color:#000;
+    }
+  }
+  i {
+    font-size:20px;
+  }
+
+}
+
+/* ------------------------------------------------------------ *
+   LEVEL ICONS
+\* ------------------------------------------------------------ */
+
+p.icon {
+  font-family: 'level';
+}
+
+i {
+  font-size:20px;
+}
+
+/* small displays */
+@media only screen {
+
+  .small-padding--tb-large {
+    padding-top: 2.5rem;
+    padding-bottom:2.5rem;
+  }
+
+  .small-padding--tb-medium{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .small-padding--tb-small{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .small-padding--t-large {
+    padding-top: 2.5rem;
+  }
+
+  .small-padding--t-xlarge {
+    padding-top: 3rem;
+  }
+
+  .small-padding--tb-xlarge {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .small-padding--tb-xxlarge {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .small-padding--t-medium{
+    padding-top: 1.5rem;
+  }
+
+  .small-padding--t-small{
+    padding-top: .5rem;
+  }
+
+  .small-padding--b-large {
+    padding-bottom: 2.5rem;
+  }
+
+  .small-padding--b-medium{
+    padding-bottom: 1.5rem;
+  }
+
+  .small-padding--b-small{
+    padding-bottom: .5rem;
+  }
+
+  .small-padding--rl-small {
+    padding-right:.5rem;
+    padding-left:.5rem;
+  }
+
+  .small-padding--rl-medium{
+    padding-right:1.5rem;
+    padding-left:1.5rem;
+  }
+
+  .small-padding--rl-large{
+    padding-right:2.5rem;
+    padding-left:2.5rem;
+  }
+
+  .small-padding--r-small {
+    padding-right:.5rem;
+  }
+
+  .small-padding--r-medium{
+    padding-right:1.5rem;
+  }
+
+  .small-padding--r-large{
+    padding-right:2.5rem;
+  }
+
+  .small-padding--r-xlarge{
+    padding-right:3.5rem;
+  }
+
+  .small-padding--r-xxlarge{
+    padding-right:4.5rem;
+  }
+  .small-padding--r-3xlarge{
+    padding-right:5.5rem;
+  }
+
+  .small-padding--l-small {
+    padding-left:.5rem;
+  }
+
+  .small-padding--l-medium{
+    padding-left:1.5rem;
+  }
+
+  .small-padding--l-large{
+    padding-left:2.5rem;
+  }
+
+  .small-padding--l-xlarge{
+    padding-left:3.5rem;
+  }
+
+  .small-padding--l-xxlarge{
+    padding-left:4.5rem;
+  }
+  .small-padding--tb-3xlarge {
+    padding-top:5rem;
+    padding-bottom:5rem;
+  }
+
+  .small-padding--tb-4xlarge {
+    padding-top:7rem;
+    padding-bottom:7rem;
+  }
+
+  .small-padding--full-small {
+    padding:.5rem;
+  }
+
+  .small-padding--full-medium {
+    padding:1.5rem;
+  }
+  .small-border--rl-none, .background--gray-light .small-border--rl-none {
+    border-right:none;
+    border-left: none;
+  }
+
+  .small-padding--trl-small{
+    padding: .5rem .5rem 0 .5rem ;
+  }
+
+  .small-padding--trl-medium{
+    padding: 1.5rem 1.5rem 0 1.5rem ;
+  }
+
+  .small-padding--trl-large {
+    padding: 2.5rem 2.5rem 0 2.5rem ;
+  }
+}
+
+/* medium displays */
+@media only screen and (min-width: 40.063em) {
+ 
+  .medium-padding--tb-large {
+    padding-top: 2.5rem;
+    padding-bottom:2.5rem;
+  }
+
+  .medium-padding--tb-medium{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .medium-padding--tb-small{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .medium-padding--t-large {
+    padding-top: 2.5rem;
+  }
+
+  .medium-padding--t-xlarge {
+    padding-top: 3rem;
+  }
+
+  .medium-padding--tb-xlarge {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .medium-padding--tb-xxlarge {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .medium-padding--t-medium{
+    padding-top: 1.5rem;
+  }
+
+  .medium-padding--t-small{
+    padding-top: .5rem;
+  }
+
+  .medium-padding--b-large {
+    padding-bottom: 2.5rem;
+  }
+
+  .medium-padding--b-medium{
+    padding-bottom: 1.5rem;
+  }
+
+  .medium-padding--b-small{
+    padding-bottom: .5rem;
+  }
+
+  .medium-padding--rl-small {
+    padding-right:.5rem;
+    padding-left:.5rem;
+  }
+
+  .medium-padding--rl-medium{
+    padding-right:1.5rem;
+    padding-left:1.5rem;
+  }
+
+  .medium-padding--rl-large{
+    padding-right:2.5rem;
+    padding-left:2.5rem;
+  }
+
+  .medium-padding--rl-xlarge{
+    padding-right:3.5rem;
+    padding-left:3.5rem;
+  }
+
+  .medium-padding--rl-xxlarge{
+    padding-right:4.5rem;
+    padding-left:4.5rem;
+  }
+
+  .medium-padding--r-small {
+    padding-right:.5rem;
+  }
+
+  .medium-padding--r-medium{
+    padding-right:1.5rem;
+  }
+
+  .medium-padding--r-large{
+    padding-right:2.5rem;
+  }
+
+  .medium-padding--r-xlarge{
+    padding-right:3.5rem;
+  }
+
+  .medium-padding--r-xxlarge{
+    padding-right:4.5rem;
+  }
+  .medium-padding--r-3xlarge{
+    padding-right:5.5rem;
+  }
+
+  .medium-padding--l-small {
+    padding-left:.5rem;
+  }
+
+  .medium-padding--l-medium{
+    padding-left:1.5rem;
+  }
+
+  .medium-padding--l-large{
+    padding-left:2.5rem;
+  }
+
+  .medium-padding--l-xlarge{
+    padding-left:3.5rem;
+  }
+
+  .medium-padding--l-xxlarge{
+    padding-left:4.5rem;
+  }
+  .medium-padding--tb-3xlarge {
+    padding-top:5rem;
+    padding-bottom:5rem;
+  }
+
+  .medium-padding--tb-4xlarge {
+    padding-top:7rem;
+    padding-bottom:7rem;
+  }
+  .padding--tb-4xlarge {
+    padding-top:4rem;
+    padding-bottom:4rem;
+  }
+  
+  .large-border--rl {
+    border-right:none;
+    border-left: none;
+  }
+}
+
+/* large displays */
+@media only screen and (min-width: 64.063em) {
+  .large-padding--tb-large {
+    padding-top: 2.5rem;
+    padding-bottom:2.5rem;
+  }
+
+  .large-padding--tb-medium{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .large-padding--tb-small{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .large-padding--t-large {
+    padding-top: 2.5rem;
+  }
+
+  .large-padding--t-xlarge {
+    padding-top: 3rem;
+  }
+
+  .large-padding--tb-xlarge {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .large-padding--tb-xxlarge {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .large-padding--t-medium{
+    padding-top: 1.5rem;
+  }
+
+  .large-padding--t-small{
+    padding-top: .5rem;
+  }
+
+  .large-padding--b-large {
+    padding-bottom: 2.5rem;
+  }
+
+  .large-padding--b-medium{
+    padding-bottom: 1.5rem;
+  }
+
+  .large-padding--b-small{
+    padding-bottom: .5rem;
+  }
+
+  .large-padding--rl-small {
+    padding-right:.5rem;
+    padding-left:.5rem;
+  }
+
+  .large-padding--rl-medium{
+    padding-right:1.5rem;
+    padding-left:1.5rem;
+  }
+
+  .large-padding--rl-large{
+    padding-right:2.5rem;
+    padding-left:2.5rem;
+  }
+
+  .large-padding--rl-xlarge{
+    padding-right:3.5rem;
+    padding-left:3.5rem;
+  }
+
+  .large-padding--r-small {
+    padding-right:.5rem;
+  }
+
+  .large-padding--r-medium{
+    padding-right:1.5rem;
+  }
+
+  .large-padding--r-large{
+    padding-right:2.5rem;
+  }
+
+  .large-padding--r-xlarge{
+    padding-right:3.5rem;
+  }
+
+  .large-padding--r-xxlarge{
+    padding-right:4.5rem;
+  }
+  .large-padding--r-3xlarge{
+    padding-right:5.5rem;
+  }
+
+  .large-padding--l-small {
+    padding-left:.5rem;
+  }
+
+  .large-padding--l-medium{
+    padding-left:1.5rem;
+  }
+
+  .large-padding--l-large{
+    padding-left:2.5rem;
+  }
+
+  .large-padding--l-xlarge{
+    padding-left:3.5rem;
+  }
+
+  .large-padding--l-xxlarge{
+    padding-left:4.5rem;
+  }
+  .large-padding--tb-3xlarge {
+    padding-top:5rem;
+    padding-bottom:5rem;
+  }
+
+  .large-padding--tb-4xlarge {
+    padding-top:7rem;
+    padding-bottom:7rem;
+  }
+  .background--web-presence {
+    background-size:102%;
+  }
+  .padding--tb-4xlarge {
+    padding-top:5rem;
+    padding-bottom:5rem;
+  }
+  .padding--tb-3xlarge {
+    padding-top:4rem;
+    padding-bottom:4rem;
+  }
+  .padding--tb-xxlarge {
+    padding-top:3rem;
+    padding-bottom:3rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .background--consulting-head {
+    background-size: 100%;
+  }
+
+  .xlarge-padding--tb-large {
+    padding-top: 2.5rem;
+    padding-bottom:2.5rem;
+  }
+
+  .xlarge-padding--tb-medium{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .xlarge-padding--tb-small{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .xlarge-padding--t-large {
+    padding-top: 2.5rem;
+  }
+
+  .xlarge-padding--t-xlarge {
+    padding-top: 3rem;
+  }
+
+  .xlarge-padding--tb-xlarge {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .xlarge-padding--tb-xxlarge {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xlarge-padding--t-medium{
+    padding-top: 1.5rem;
+  }
+
+  .xlarge-padding--t-small{
+    padding-top: .5rem;
+  }
+
+  .xlarge-padding--b-large {
+    padding-bottom: 2.5rem;
+  }
+
+  .xlarge-padding--b-medium{
+    padding-bottom: 1.5rem;
+  }
+
+  .xlarge-padding--b-small{
+    padding-bottom: .5rem;
+  }
+
+  .xlarge-padding--rl-small {
+    padding-right:.5rem;
+    padding-left:.5rem;
+  }
+
+  .xlarge-padding--rl-medium{
+    padding-right:1.5rem;
+    padding-left:1.5rem;
+  }
+
+  .xlarge-padding--rl-large{
+    padding-right:2.5rem;
+    padding-left:2.5rem;
+  }
+
+  .xlarge-padding--r-small {
+    padding-right:.5rem;
+  }
+
+  .xlarge-padding--r-medium{
+    padding-right:1.5rem;
+  }
+
+  .xlarge-padding--r-large{
+    padding-right:2.5rem;
+  }
+
+  .xlarge-padding--r-xlarge{
+    padding-right:3.5rem;
+  }
+
+  .xlarge-padding--r-xxlarge{
+    padding-right:4.5rem;
+  }
+  .xlarge-padding--r-3xlarge{
+    padding-right:5.5rem;
+  }
+
+  .xlarge-padding--l-small {
+    padding-left:.5rem;
+  }
+
+  .xlarge-padding--l-medium{
+    padding-left:1.5rem;
+  }
+
+  .xlarge-padding--l-large{
+    padding-left:2.5rem;
+  }
+
+  .xlarge-padding--l-xlarge{
+    padding-left:3.5rem;
+  }
+
+  .xlarge-padding--l-xxlarge{
+    padding-left:4.5rem;
+  }
+  .xlarge-padding--tb-3xlarge {
+    padding-top:5rem;
+    padding-bottom:5rem;
+  }
+
+  .xlarge-padding--tb-4xlarge {
+    padding-top:7rem;
+    padding-bottom:7rem;
+  }
+}

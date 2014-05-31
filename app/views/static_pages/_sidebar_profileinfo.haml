@@ -1,0 +1,25 @@
+.panel.clearfix.panel--no-padding
+  .container--full-padding
+    = image_tag "User-default.png", :class => "left"
+    .container--text-padding.left
+      %h5.no-margin-bottom 
+        %strong Username
+      %p City, State
+      %br
+    .row.left
+      .small-4.columns.small-text-center
+        .meta.meta-light Points
+        .meta.meta-dark 
+          %i.fa.fa-trophy 0
+      .small-4.columns.small-text-center
+        .meta.meta-light Followers
+        .meta.meta-dark 0
+      .small-4.columns.small-text-center
+        .meta.meta-light Following
+        .meta.meta-dark 0
+  .container--full-padding.border-top--orange.bg-gray
+    %textarea#post--small-trigger.no-margin-bottom{maxlength: "140", placeholder: "Post an update...", style: "resize:none; height:34px; min-height: 34px;", type: "text"}
+    #post--small{style: "display:none;"}
+      %a.left{href: "#"} Location
+      %a.left{href: "#"} Image
+      %button#post--small-submit.tiny.right.radius Post

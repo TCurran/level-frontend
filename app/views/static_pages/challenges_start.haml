@@ -1,0 +1,53 @@
+= render "static_pages/nav"
+= render "static_pages/challenge_header"
+     
+/Start Task List
+.row.collapse  
+  .small-8.small-centered.columns
+    .row.collapse
+      .alert-box.info.radius{"data-alert" => ""}
+        You have now started this challenge! When you complete a task you can log your progress and update your followers by checking in. 
+        %a.close{href: "#"} ×
+    .panel.panel--no-padding
+      /Single Task Listing
+      .listing.listing--medium
+        .row.collapse
+          .large-7.medium-12.small-12.columns
+            %a.block{href: "#"}
+              %h4
+                %strong #Task Name 
+              %p Task Description
+          .large-3.medium-1.small-1.columns.text-center
+            /Points amount
+            %span.secondary.radius.label--medium.label.label--medium 
+              %h6.label--medium
+                %i.fa.fa-trophy  50
+          .large-2.medium-1.small-1.columns
+            %a.button.radius.tiny.right.label--medium{href: "#"} 
+              %i.fa.fa-check Checkin
+
+      /Need to add this dropdown functionality
+      .listing.listing--large.bg-gray
+        .row.collapse
+          .small-11.small-centered.columns
+            %input{maxlength: "140", placeholder: "How many did you do?", style: "resize:none; height:50px;", type: "text"}
+            %button#post--small-submit.tiny.right.radius.button--no-margin Post
+            %a.right{href: "#"}
+              %i.fa.fa-camera-retro.fa-gray.center
+      
+      /Can be deleted - for example purposes only
+      .listing.listing--medium
+        .row.collapse
+          .large-7.medium-12.small-12.columns
+            %a.block{href: "#"}
+              %h4
+                %strong #Task Name 
+              %p Task Description
+          .large-3.medium-1.small-1.columns.text-center
+            /Points amount
+            %span.secondary.radius.label--medium.label.label--medium 
+              %h6.label--medium
+                %i.fa.fa-trophy  50
+          .large-2.medium-1.small-1.columns
+            %a.button.radius.tiny.right.label--medium{href: "#"} 
+              %i.fa.fa-check Checkin

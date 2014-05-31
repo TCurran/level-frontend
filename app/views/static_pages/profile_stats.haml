@@ -1,0 +1,197 @@
+= render "static_pages/nav"
+.row.container
+  /Sidebar
+  .large-4.columns 
+    .panel
+      %h3 Username
+
+  /Primary Content 
+  .large-8.columns
+    %dl.tabs{"data-tab" => ""}
+      %dd
+        %a{href: "#"} 
+          .meta.meta-light Activity
+      %dd
+        %a{href: "#"} 
+          .meta.meta-light Points
+      %dd
+        %a{href: "#"} 
+          .meta.meta-light Stats
+      %dd
+        %a{href: "static_pages/profile_large"} 
+          .meta.meta-light Media
+      %dd.active
+        %a{href: "#"} 
+          .meta.meta-light Challenges
+      %dd
+        %a.dropdown.meta.meta-light{"data-dropdown" => "drop1", href: "#", style: "font-size:12px; color:#9B9B9B"} More
+        %br/
+        %ul#drop1.f-dropdown{"data-dropdown-content" => ""}
+          %li
+            %a{href: "#"} Option 1
+          %li
+            %a{href: "#"} Option 2
+          %li
+            %a{href: "#"} Option 3
+
+.row.collapse
+  .container--full-padding{style: "padding:0 20px 20px;"}
+    .row.tabs--container
+      %a.button.radius.small.right.button--no-margin{href: "#"} Follow
+      %dl.tabs.tabs--no-bg{"data-tab" => ""}
+        %dd.active
+          %a{href: "#panel2-1"} Usernames's Stats
+        %dd
+          %a{href: "#panel2-2"} Tagged Stats
+        %dd
+          %a{href: "#panel2-3"} All Stats
+    .tabs-content
+      #panel2-1.content.active
+        .row
+          /Sidebar
+          .large-4.columns
+            .row
+              .large-11.large-offset-1.columns
+                <h4>Username's Activity</h4>
+                .row.collapse
+                  .small-9.columns
+                    %input{placeholder: "Search...", type: "text"}/
+                  .small-3.columns
+                    %span.postfix Search
+                %a.button.expand.radius{href: "#"} situps
+                %a.button.expand.radius{href: "#"} pullups
+                %a.button.expand.radius{href: "#"} bench
+                %a.button.expand.radius{href: "#"} squats
+                %a.button.expand.radius{href: "#"} lunges
+                %a.button.expand.radius{href: "#"} another one
+                %a.button.expand.radius{href: "#"} another one
+
+
+          /Primary Content 
+          .large-8.columns
+            .panel
+              %h3.left Recent Activity
+              %a.button.dropdown.right.tiny.radius.secondary{"data-dropdown" => "drop10", href: "10#"} Filter
+              %br/
+              %ul#drop5.f-dropdown{"data-dropdown-content" => ""}
+                %li
+                  %a{href: "10#"} Last Week
+                %li
+                  %a{href: "10#"} Last 30 Days
+                %li
+                  %a{href: "10#"} Last 90 Days
+                %li
+                  %a{href: "10#"} Need the rest
+              %br/
+              %br/
+              = image_tag "graph-placement.png" 
+              %br/
+              %br/
+          .large-8.columns
+            .panel.panel--no-padding
+              .module--header.clearfix.border-bottom--orange
+                %h3 Activity Feed
+              = render "static_pages/post"
+              = render "static_pages/post"
+              = render "static_pages/post"
+              = render "static_pages/post"
+
+
+      #panel2-2.content
+        .row
+          /Sidebar
+          .large-4.columns
+            .row
+              .large-11.large-offset-1.columns
+                <h4>Tagged Activity</h4>
+                .row.collapse
+                  .small-9.columns
+                    %input{placeholder: "Search...", type: "text"}/
+                  .small-3.columns
+                    %span.postfix Search
+                %a.button.expand.radius{href: "#"} situps
+                %a.button.expand.radius{href: "#"} pullups
+                %a.button.expand.radius{href: "#"} bench
+                %a.button.expand.radius{href: "#"} squats
+                %a.button.expand.radius{href: "#"} lunges
+                %a.button.expand.radius{href: "#"} another one
+                %a.button.expand.radius{href: "#"} another one
+
+          /Primary Content 
+          .large-8.columns
+            .panel
+              %h3.left Recent Tagged Activity
+              %a.button.dropdown.right.tiny.radius.secondary{"data-dropdown" => "drop11", href: "11#"} Filter
+              %br/
+              %ul#drop5.f-dropdown{"data-dropdown-content" => ""}
+                %li
+                  %a{href: "11#"} Last Week
+                %li
+                  %a{href: "11#"} Last 30 Days
+                %li
+                  %a{href: "11#"} Last 90 Days
+                %li
+                  %a{href: "11#"} Need the rest
+              %br/
+              %br/
+              = image_tag "graph-placement.png" 
+              %br/
+              %br/
+          .large-8.columns
+            .panel.panel--no-padding
+              .module--header.clearfix.border-bottom--orange
+                %h3 Activity Feed
+              = render "static_pages/post"
+              = render "static_pages/post"
+              = render "static_pages/post"
+              = render "static_pages/post"
+        
+      #panel2-3.content
+        .row
+          /Sidebar
+          .large-4.columns
+            .row
+              .large-11.large-offset-1.columns
+                <h4>All Activity</h4>
+                .row.collapse
+                  .small-9.columns
+                    %input{placeholder: "Search...", type: "text"}/
+                  .small-3.columns
+                    %span.postfix Search
+                %a.button.expand.radius{href: "#"} situps
+                %a.button.expand.radius{href: "#"} pullups
+                %a.button.expand.radius{href: "#"} bench
+                %a.button.expand.radius{href: "#"} squats
+                %a.button.expand.radius{href: "#"} lunges
+                %a.button.expand.radius{href: "#"} another one
+                %a.button.expand.radius{href: "#"} another one
+
+          /Primary Content 
+          .large-8.columns
+            .panel
+              %h3.left Recent Activity
+              %a.button.dropdown.right.tiny.radius.secondary{"data-dropdown" => "drop12", href: "12#"} Filter
+              %br/
+              %ul#drop5.f-dropdown{"data-dropdown-content" => ""}
+                %li
+                  %a{href: "12#"} Last Week
+                %li
+                  %a{href: "12#"} Last 30 Days
+                %li
+                  %a{href: "12#"} Last 90 Days
+                %li
+                  %a{href: "12#"} Need the rest
+              %br/
+              %br/
+              = image_tag "graph-placement.png" 
+              %br/
+              %br/
+          .large-8.columns
+            .panel.panel--no-padding
+              .module--header.clearfix.border-bottom--orange
+                %h3 Activity Feed
+              = render "static_pages/post"
+              = render "static_pages/post"
+              = render "static_pages/post"
+              = render "static_pages/post"
+        

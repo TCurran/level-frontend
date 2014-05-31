@@ -1,0 +1,76 @@
+= render "static_pages/nav"
+.row.container
+  .large-4.columns.show-for-large-up 
+    = render "static_pages/sidebar_events"
+  .large-8.columns
+    .row
+      .large-12.columns
+        %h2 Events 
+        .panel.callout.radius.events
+          %br/
+          %h4.subheader Talk about Level camps/combines whatever and how awesome they are etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. 
+          %br/
+    /Filter and Search 
+    .row.collapse
+      /Filter
+      .large-4.columns
+        %a.button.dropdown.tiny.left.radius{"data-dropdown" => "drop6", href: "3#"}
+          Filter
+        %br/
+        %ul#drop6.f-dropdown{"data-dropdown-content" => ""}
+          %li
+            %a{href: "6#"} Option 1
+          %li
+            %a{href: "6#"} Option 2
+          %li
+            %a{href: "6#"} Option 3
+      /Search
+      .large-4.columns
+        .row.collapse
+          .small-9.columns
+            %input{placeholder: "Search...", type: "text"}/
+          .small-3.columns
+            %span.postfix Search
+
+    /Events Listing
+    .row.collapse
+      .panel.panel--no-padding
+        /Single Event Listing
+        %a{href: "#"}
+          .listing.listing--medium
+            .row.collapse
+              .small-2.columns
+                %h2.date 
+                  %small
+                    %strong APR 25
+              .small-7.columns.padding-left
+                .meta.meta-light.meta--no-uppercase
+                  %strong 
+                    Charlotte, NC  |  Revolution Park
+                %h3 
+                  %strong Friday Night Lights
+              .small-1.columns
+                /Arrow need to add icon
+
+        /Delete Below - for example purposes only. 
+        %a{href: "#"}
+          .listing.listing--medium
+            .row.collapse
+              .small-2.columns
+                %h2.date
+                  %small
+                    %strong Mar 25
+              .small-7.columns.padding-left
+                .meta.meta-light.meta--no-uppercase
+                  %strong 
+                    Charlotte, NC  |  Revolution Park
+                %h3 
+                  %strong Friday Night Lights
+              .small-1.columns
+                /Arrow need to add icon
+
+
+
+
+
+    

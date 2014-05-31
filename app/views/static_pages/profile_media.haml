@@ -1,0 +1,146 @@
+= render "static_pages/nav"
+.row.container
+  /Sidebar
+  .large-4.columns 
+    .panel
+      %h3 Username
+
+  /Primary Content 
+  .large-8.columns
+    %dl.tabs{"data-tab" => ""}
+      %dd
+        %a{href: "#"} 
+          .meta.meta-light Activity
+      %dd
+        %a{href: "#"} 
+          .meta.meta-light Points
+      %dd
+        %a{href: "#"} 
+          .meta.meta-light Stats
+      %dd.active
+        %a{href: "static_pages/profile_large"} 
+          .meta.meta-light Media
+      %dd
+        %a{href: "#"} 
+          .meta.meta-light Challenges
+      %dd
+        %a.dropdown.meta.meta-light{"data-dropdown" => "drop1", href: "#", style: "font-size:12px; color:#9B9B9B"} More
+        %br/
+        %ul#drop1.f-dropdown{"data-dropdown-content" => ""}
+          %li
+            %a{href: "#"} Option 1
+          %li
+            %a{href: "#"} Option 2
+          %li
+            %a{href: "#"} Option 3
+
+.row
+  .container--full-padding{style: "padding:0 20px 20px;"}
+    %a.button.radius.small.right{href: "#"} Follow
+    %dl.tabs{"data-tab" => ""}
+      %dd.active
+        %a{href: "#panel2-1"} All
+      %dd
+        %a{href: "#panel2-2"} Videos
+      %dd
+        %a{href: "#panel2-3"} Photos
+    .tabs-content
+      #panel2-1.content.active
+        %ul.clearing-thumbs.small-block-grid-1.medium-block-grid-3.large-block-grid-3{"data-clearing" => ""}
+          %li
+            %a{href: "//www.youtube.com/embed/qPyfFM8xZAM"}
+              .flex-video
+                %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/qPyfFM8xZAM", class: "menu_icon", "data-caption" => "Caption for image"}
+          %li
+            .flex-video
+              %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/qPyfFM8xZAM", class: "menu_icon", "data-caption" => "Caption for image"}
+          %li
+            .flex-video
+              %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/qPyfFM8xZAM", class: "menu_icon", "data-caption" => "Caption for image"}
+        %ul.clearing-thumbs.small-block-grid-1.large-block-grid-6{"data-clearing" => ""}
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+          %li
+            %a{href: "path/to/your/img"}
+              = image_tag("image-1x1.png", class: "menu_icon", "data-caption" => "Caption for image")
+
+      #panel2-2.content
+        %ul.small-block-grid-1.medium-block-grid-3.large-block-grid-3
+          %li
+            .flex-video
+              %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/qPyfFM8xZAM"}
+          %li
+            .flex-video
+              %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/qPyfFM8xZAM"}
+          %li
+            .flex-video
+              %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/qPyfFM8xZAM"}
+      #panel2-3.content
+        %ul.small-block-grid-1.medium-block-grid-4.large-block-grid-6
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"
+          %li
+            = image_tag "image-1x1.png"

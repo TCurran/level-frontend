@@ -1,0 +1,68 @@
+= render "static_pages/nav"
+.row.container
+  /Sidebar
+  .large-4.columns.show-for-large-up 
+    /Profile Image
+    .panel.clearfix.panel--no-padding
+      .container--full-padding
+        = image_tag "user.png"
+      .text-center
+        /if this is the current users profile the following button is Edit Profile linking to edit profile page
+        %a.button.radius.small.secondary--dark{href: "#"}
+          %i.fa.fa-pencil
+
+  /Primary Content 
+  .large-8.columns
+    %h2 Profile Settings
+    %form
+      .row.collapse
+        .large-7.medium-12.small-12.columns
+          %label
+            %strong Name
+          %input.radius{placeholder: "", type: "text"}
+        .large-4.medium-12.small-12.columns
+          %label
+            %strong Twitter Handle
+          %input.radius{placeholder: "", type: "text"}
+      .row.collapse
+        .large-5.medium-12.small-12.columns
+          %label
+            %strong City
+          %input.radius{placeholder: "", type: "text"}
+        .large-2.medium-12.small-12.columns.form--tiny-dropdown
+          %label
+            %strong   
+          %a.button.dropdown.tiny.radius.secondary--dark.right{"data-dropdown" => "drop7", href: "#", style: "font-size:14px; color:#000"} State
+          %br/
+          %ul#drop7.f-dropdown{"data-dropdown-content" => ""}
+            %li
+              %a{href: "#"} State 1
+            %li
+              %a{href: "#"} add states
+        .large-4.medium-12.small-12.columns
+          %a.button.dropdown.tiny.radius.secondary--dark.form--tiny-dropdown{"data-dropdown" => "drop6", href: "#", style: "font-size:14px; color:#000"} Gender
+          %br/
+          %ul#drop6.f-dropdown{"data-dropdown-content" => ""}
+            %li
+              %a{href: "#"} Male
+            %li
+              %a{href: "#"} Female
+      .row.collapse
+        .large-12.columns
+          %label
+            %strong Sport
+          %input.radius{placeholder: "Question that you want people to checkin. i.e. How many pushups did you do?", type: "text"}
+      .row.collapse
+        .small-12.columns
+          %label
+            %strong Bio
+          %textarea.radius.large{placeholder: "", maxlength: "140", type: "text", height: "100"}
+          .meta.meta-light.meta--no-uppercase.right 0 of 140 Characters
+          %br/
+          %br/
+      .row.collapse
+        .small-12.columns
+          %a.button.radius.small.right{href:""} Save Changes
+
+
+    

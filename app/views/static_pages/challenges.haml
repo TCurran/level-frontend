@@ -1,0 +1,46 @@
+= render "static_pages/nav"
+.row.container
+  .large-4.columns.show-for-large-up 
+    = render "static_pages/sidebarfull"
+  .large-8.columns
+    .row
+      .large-12.columns
+        %h2 Challenges
+        .panel.callout.radius
+          %h5 Create and complete daily workouts/challenges to see where you stack up amongst your peers. Time to take a challenge. 
+    .row.collapse
+      .small-3.columns
+        %a.button.dropdown.tiny.left.radius.secondary{"data-dropdown" => "drop6", href: "3#"}
+          Filter
+        %br/
+        %ul#drop6.f-dropdown{"data-dropdown-content" => ""}
+          %li
+            %a{href: "6#"} Option 1
+          %li
+            %a{href: "6#"} Option 2
+          %li
+            %a{href: "6#"} Option 3
+      .small-5.columns
+        .row.collapse
+          .small-9.columns
+            %input{placeholder: "Search...", type: "text"}/
+          .small-3.columns
+            %span.postfix Search
+      .small-4.columns
+        %a.button.radius.tiny.button--no-margin.right{href: "#"} Create Challenge
+    .row.collapse
+      .panel.panel--no-padding
+        .listing.listing-medium
+          %ul.inline-list
+            %li
+              %a{href: "#"} 
+                %h5
+                  %strong Challenge Name
+            %li
+              %a.meta--inline-list{href: "#"} Username • Date
+          %p Challenge Description
+
+
+
+
+      

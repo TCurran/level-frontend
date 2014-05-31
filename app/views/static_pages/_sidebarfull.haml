@@ -1,0 +1,53 @@
+/Profile info Module Main
+= render "static_pages/sidebar_profileinfo"
+ 
+/Leaderboard Module      
+.panel.panel--no-padding.clearfix
+  .module--header.border-bottom--orange.clearfix
+    %h5.left Leaderboard
+    %a.right.module--link{href: "#"} View all
+  %table.sidebar
+    %tbody
+      %tr
+        %td 1
+        %td 
+          %a{href: "#"} First User
+        %td 0
+      %tr
+        %td 2
+        %td 
+          %a{href: "#"} Second User
+        %td 0
+      %tr
+        %td 3
+        %td 
+          %a{href: "#"} Third User
+        %td 0
+      %tr
+        %td 4
+        %td 
+          %a{href: "#"} Fourth User
+        %td 0
+      %tr
+        %td 5
+        %td 
+          %a{href: "#"} Fifth User
+        %td 0 
+
+/Challenges Module        
+.panel.panel--no-padding.clearfix
+  .module--header.clearfix.border-bottom--orange
+    %h5.left My Challenges (#)
+    %a.right.module--link{href: "#"} View all
+  %a{href: "#"}
+    .listing.listing--small
+      <strong>Challenge Name</strong>
+      <p>Challenge Description</p>
+  %a{href: "#"}
+    .listing.listing--small
+      <strong>Challenge Name</strong>
+      <p>Challenge Description</p>
+  %a{href: "#"}
+    .listing.listing--small.listing-last
+      <strong>Challenge Name</strong>
+      <p>Challenge Description</p>

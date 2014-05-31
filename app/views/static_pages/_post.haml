@@ -1,0 +1,27 @@
+.container.small-padding--full-medium
+  .row.collapse 
+    .small-1.columns
+      = image_tag "User-default-post.png", :width => "56"
+    .small-11.columns
+      .container.small-padding--tb-small.small-padding--l-medium
+        <strong>User Name</strong>
+        %small Time Posted
+        %p.no-margin Regular post content bla bla Lorem ipsum dolor sit amet.
+  .row
+    .small-12.columns
+      .right
+        %a 
+          %small.post__ops Like (#)
+        %a 
+          %small.post__ops Options 
+      %dl.accordion{"data-accordion" => "", style: "margin-top: 2px;"} 
+        %dd
+          %a{href: "#panel1"}
+            %small.left Expand
+            %small.right Comment (#)
+          #panel1.content
+            %textarea.no-margin-bottom{maxlength: "140", placeholder: "Post an update...", style: "resize:none; height:100px;", type: "text"}
+            %a.left{href: "#"} Location
+            %a.left{href: "#"} Image
+            %button#post--small-submit.tiny.right.radius Post
+

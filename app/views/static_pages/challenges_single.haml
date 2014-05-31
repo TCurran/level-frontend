@@ -1,0 +1,42 @@
+= render "static_pages/nav"
+.row.container
+  .small-10.small-centered.columns
+    .panel.callout.radius--large.callout--large.container--full-padding
+      %h1.alpha
+        %strong Challenge Name
+      %h6.placeholder.meta-light Created by Username
+      %br/
+      %h4 The content telling you what the challenge is about. 
+      %br/
+      .row
+        .small-2.small-centered.columns
+          %a.button.radius.small.button--no-margin{href: "#"} Start 
+/Start Task List
+.row.collapse  
+  .small-8.small-centered.columns
+    .panel.panel--no-padding
+      /Single Task Listing
+      .row.collapse
+        %a{href: "#"}
+          .listing.listing--medium.clearfix
+            .small-8.columns
+              %h4
+                %strong #Task Name
+              %p Task Description
+            .small-4.columns
+              %span.secondary.radius.right.label--medium.label.label--medium 
+                %h6.label--medium 
+                  %i.fa.fa-trophy  50pts
+
+      /Can be deleted - for example purposes only
+      .row.collapse
+        %a{href: "#"}
+          .listing.listing--medium.clearfix
+            .small-8.columns
+              %h4
+                %strong #Task Name
+              %p Task Description
+            .small-4.columns
+              %span.secondary.radius.right.label--medium.label.label--medium 
+                %h6.label--medium 
+                  %i.fa.fa-trophy  50pts  

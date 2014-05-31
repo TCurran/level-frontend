@@ -1,0 +1,79 @@
+= render "static_pages/nav"
+= render "static_pages/challenges_createheader"
+     
+/Start Task List
+.row.collapse  
+  .small-8.small-centered.columns
+    .row.collapse
+      %form
+        .row.collapse
+          .large-12.columns
+            %label
+              %strong Title
+            %input.radius{placeholder: "Enter a title for your Challenge...", type: "text"}
+          .large-12.columns
+            %label
+              %strong Description
+            %textarea.radius.large{placeholder: "Describe your workout/challenge. i.e. This Challenge is great for people who want to imporve their #flexibility.", maxlength: "140", type: "text", height: "100"}
+            .meta.meta-light.meta--no-uppercase.right 0 of 140 Characters
+            %br/
+            %br/
+    .row.collapse
+      .alert-box.info.radius{"data-alert" => ""}
+        Now add Tasks and watch people take your challenges. 
+        %a.close{href: "#"} ×
+      %a.button.radius.small.right{href: "#"} Add Task
+
+    /This is hidden until Add Task Above is clicked. Need to add functionality. 
+    .row.collapse
+      %h4
+        %strong Tasks
+      .panel
+        %form
+          .row.collapse
+            .large-7.medium-12.small-12.columns
+              %label
+                %strong Task Name
+              %input.radius{placeholder: "Name your task. i.e. Pushups, Bench, Squats", type: "text"}
+            .large-4.medium-12.small-12.columns
+              %label
+                %strong Points
+              %input.radius{placeholder: "Name your task. i.e. Pushups, Bench, Squats", type: "text"}
+          .row.collapse
+            .large-12.columns
+              %label
+                %strong Description
+              %textarea.radius.large{placeholder: "Describe your task. i.e. Need to put in a good example.", maxlength: "140", type: "text", height: "100"}
+              .meta.meta-light.meta--no-uppercase.right 0 of 140 Characters
+              %br/
+          .row.collapse
+            .large-12.columns
+              %label
+                %strong Track Result
+              %input.radius{placeholder: "Question that you want people to checkin. i.e. How many pushups did you do?", type: "text"}
+          .row.collapse
+            %a.button.radius.small.right.button--no-margin{href: "#"} Add Task
+
+    /This is what happens after you click the buttom above. We need to make these drag and dropable. 
+    .row.collapse
+      %h4
+        %strong Tasks  
+      .panel.panel--no-padding
+        /Single Task Listing
+        .row.collapse
+          %a{href: "#"}
+            .listing.listing--medium.clearfix
+              .small-8.columns
+                %h4
+                  %strong #Task Name
+                %p Task Description
+              .small-4.columns
+                %span.secondary.radius.right.label--medium.label.label--medium 
+                  %h6.label--medium 
+                    %i.fa.fa-trophy  50
+    .row.collapse
+      .large-8.columns
+        %a.button.radius.small.right.button--no-margin{href: "#"} Add Task
+      .large-3.columns
+        %a.button.radius.small.right.button--no-margin{href: "#"} Publish Challenge
+

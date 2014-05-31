@@ -1,0 +1,46 @@
+= render "static_pages/nav"
+= render "static_pages/challenge_header"
+     
+/Start Task List
+.row.collapse  
+  .small-8.small-centered.columns
+    .row.collapse
+      .alert-box.info.radius{"data-alert" => ""}
+        You have completed ChallengeName! You have earned X points overall.  
+        %a.close{href: "#"} ×
+    .row.collapse
+      .large-5.medium-5.small-9.small-centered.columns
+        %a.button.radius.medium{href: "#"} Find your next challenge 
+    .panel.panel--no-padding
+      /Single Completed Task Listing
+      .listing.listing--medium
+        .row.collapse
+          .large-1.medium-1.small-2.columns
+            %i.fa.fa-check-square.large.fa-light-gray
+          .large-7.medium-7.small-8.columns
+            %a.block{href: "#"}
+              %h4
+                %strong #Task Name 
+              %p.show-for-medium-up Task Description
+          .large-3.medium-2.small-2.columns
+            /Points amount
+            %span.secondary.radius.right.label--medium.label.label--medium 
+              %h6.label--medium
+                %i.fa.fa-trophy  50
+
+      /Can Delete below - for example purposes only
+      .listing.listing--medium
+        .row.collapse
+          .large-1.medium-1.small-2.columns
+            %i.fa.fa-check-square.large.fa-light-gray
+          .large-7.medium-7.small-8.columns
+            %a.block{href: "#"}
+              %h4
+                %strong #Task Name 
+              %p.show-for-medium-up Task Description
+          .large-3.medium-2.small-2.columns
+            /Points amount
+            %span.secondary.radius.right.label--medium.label.label--medium 
+              %h6.label--medium
+                %i.fa.fa-trophy  50
+   

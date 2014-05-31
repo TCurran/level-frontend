@@ -1,0 +1,128 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.padding-right {
+  padding-right: 15px;
+} 
+
+.row.container {
+  padding-top:30px;
+}
+
+.panel.panel--no-padding {
+  padding:0px;
+}
+
+.panel .container--full-padding {
+  display:table;
+  padding:20px;
+  width:100%;
+}
+
+.row .container--full-padding {
+  width:100%;
+  padding:20px;
+}
+
+.container--text-padding {
+  padding-left:10px;
+  padding-top:6px;
+}
+
+.panel h5.no-margin-bottom, input.no-margin-bottom, .listing p  {
+  margin-bottom:0;
+}
+
+.meta {
+  font-size:12px;
+  text-transform: uppercase;
+}
+
+.meta-light {
+  color:#9B9B9B;
+}
+
+.meta--large {
+  font-size:14px;
+  text-transform: uppercase;
+}
+
+.meta-dark { 
+  color:#000;
+  font-size:14px;
+  font-weight:400;
+}
+
+.border-top--orange {
+  border-top: 2px solid #FFAC24;
+  margin-top:5px;
+}
+
+.module--header {
+  padding:10px 20px 3px 20px;
+}
+
+.module--link {
+  padding-top:4px;
+}
+
+.border-bottom--orange {
+  border-bottom: 2px solid #FFAC24;
+}
+
+.bg-gray {
+  background: #F6F5F3;
+}
+
+table.sidebar{
+  width:100%;
+  margin-bottom:0;
+}
+/*------Listing ------*/
+.listing, a.listing {
+  width: 100%;
+  border-bottom:1px solid #CCCCCC;
+  color:#000;
+  padding:20px 20px;
+}
+
+.listing--small {
+  padding:10px 20px;
+}
+
+.listing--small.last, .listing.last{
+  border-bottom:none;
+}
+
+.listing-body{
+  padding:6px 0 10px 20px;
+}
+
+.listing a {
+  padding-left:10px;
+}
+
+
+/*----- Post--small ------*/
+
+.container--full-padding textarea.no-margin-bottom.post--small-trigger{
+  resize:none;
+  height:34px;
+  min-height: 34px;
+}
+
+small.post__ops {
+  z-index: 50;
+}
+
+/*----- tabs ----*/
+
+.tabs.tabs--no-bg > a {
+  background-color:none !important;
+  background: none !important;
+}
+
+.tabs.tabs--no-bg dd.active > a {
+  border-bottom:2px solid #FFAC24 !important;
+}

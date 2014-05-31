@@ -1,0 +1,65 @@
+= render "static_pages/nav"
+.row.container
+  .large-4.columns.show-for-large-up 
+    = render "static_pages/sidebarfull"
+  .large-8.columns
+    .row
+      .large-12.columns
+        %h2 Leaderboard
+        .panel.callout.radius
+          Text to talk about what the Leaderboard is. We need to figure out what this is going to say. 
+    .row.collapse
+      .panel.panel--no-padding
+        /Current user's rank
+        %a{href: "#"}
+          .listing.listing--large.border-bottom--orange
+            .row.collapse
+              .small-1.columns
+                %h5.left.center 
+                  %strong #10
+              .small-1.columns
+                = image_tag "User-default-post.png", :width => "56"
+              .small-6.columns.padding-left
+                %strong Current User Username 
+                %p Sport
+              .small-2.columns
+                /Points amount - need to add icon
+                %h5.right.center 100
+        /Single User Listing
+        .listing.listing--small
+          .row.collapse
+            .small-1.columns
+              .left.center 
+                %strong #1
+            .small-1.columns
+              %a.block{href: "#"}
+                = image_tag "User-default-post.png", :width => "56"
+            .small-5.columns.padding-left
+              %a.block{href: "#"}
+                %strong Username 
+                %p Sport
+            .small-3.columns
+              /Points amount - need to add icon
+              %a.right.center.block{href: "#"} 10000
+            .small-2.columns
+              %a.button.radius.tiny.right{href: "#"} Follow
+
+
+        /Can delete below this just an example of the second one.
+        .listing.listing--small
+          .row.collapse
+            .small-1.columns
+              .left.center 
+                %strong #2
+            .small-1.columns
+              %a.block{href: "#"}
+                = image_tag "User-default-post.png", :width => "56"
+            .small-5.columns.padding-left
+              %a.block{href: "#"}
+                %strong Username 
+                %p Sport
+            .small-3.columns
+              /Points amount - need to add icon
+              %a.right.center.block{href: "#"} 20000000
+            .small-2.columns
+              %a.button.radius.tiny.right{href: "#"} Follow
