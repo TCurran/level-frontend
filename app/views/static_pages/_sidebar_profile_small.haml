@@ -1,0 +1,31 @@
+/Profile info module
+.panel.clearfix.panel--no-padding
+  .small-padding--trl-medium
+    = image_tag "user.png"
+    .container.small-padding--full-small
+      %h3{style: "margin-bottom:0"}
+        %strong Username
+      %p.no-margin-bottom @twittername | Location
+      .row.collapse
+        .small-4.columns.small-text-center
+          .left
+            .meta.meta-light Rank
+            .meta.meta-dark 0
+        .small-4.columns.small-text-center
+          .left
+            .meta.meta-light Followers
+            .meta.meta-dark 0
+        .small-4.columns.small-text-center
+          .right
+            .meta.meta-light Following
+            .meta.meta-dark 0
+    .container.table.small-padding--t-small.small-padding--b-medium
+      /if this is the current users profile the following button is Edit Profile linking to edit profile page
+      .centered
+        %a.button.radius.small.button--no-margin{href: "#"} Follow
+  .container.border-top--orange.bg-gray.small-padding--full-medium
+    /%input.no-margin-bottom{placeholder: "Post an update...", type: "text"}/
+    %p.centered.no-margin.small-padding--b-small 
+      %strong Football
+    %p.no-margin Now that we know who you are, I know who I am. I'm not a mistake! In a comic, you know how you can tell who the arch-villain's going to be?
+

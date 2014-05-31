@@ -589,7 +589,10 @@ dl.tabs.tabs--five {
     background-color: #FFF;
   }
   dd.tabs_dl--first {
-      border-left:1px solid #ccc;
+    border-left:1px solid #ccc;
+    a {
+      max-height: 59px;
+    }
   }
   dd.active a {
     border-bottom:4px solid #FFAC24;
@@ -606,6 +609,12 @@ dl.tabs.tabs--five {
 
     .span {
       color:#000;
+    }
+
+    img {
+      vertical-align: middle;
+      text-align: center;
+      padding-left:27px;
     }
   }
   i {
