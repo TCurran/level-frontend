@@ -1,5 +1,5 @@
 / Navigation
-%nav.top-bar{"data-topbar" => ""}
+%nav.top-bar.main{"data-topbar" => ""}
   %ul.title-area
     / Title Area
     / %li.name
@@ -13,13 +13,17 @@
     / Right Nav Section
     %ul.left
       %li
-        %a{href: "#"} Home
+        %a{href: "#"} 
+          %i.fa.fa-home 
+          Home
       %li
-        %a{href: "#"} Challenges
+        %a{href: "#"} 
+          %i.fa.fa-star 
+          Challenges
       %li
-        %a{href: "#"} Events 
-      %li
-        %a{href: "#"} Leaderboard 
+        %a{href: "#"} 
+          %i.fa.fa-bar-chart-o 
+          Stats 
     /Notifications - show only 4 notifcations and say view more for the rest. 
     %ul.right
       %li.has-dropdown.notifications

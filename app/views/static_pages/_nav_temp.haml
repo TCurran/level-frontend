@@ -1,0 +1,88 @@
+/ Navigation
+%nav.top-bar{"data-topbar" => ""}
+  %ul.title-area
+    / Title Area
+    / %li.name
+    / %h1
+    /   %a{href: "#"}
+    /     Level 
+    %li.toggle-topbar.menu-icon
+      %a{href: "#"}
+        %span menu
+  %section.top-bar-section
+    / Right Nav Section
+    %ul.left
+      %li
+        %a{href: "#"} Home
+      %li
+        %a{href: "#"} Challenges
+      %li
+        %a{href: "#"} Events 
+      %li
+        %a{href: "#"} Leaderboard 
+    /Notifications - show only 4 notifcations and say view more for the rest. 
+    %ul.right
+      %li.has-dropdown.notifications
+        %a{"data-dropdown" => "drop", "data-options" => "align:left", href: "#"}
+          %i.fa.fa-bell
+        #drop.dropdown.content{"data-dropdown-content" => ""}
+          /Single notification
+          %a.block{href: "#"}
+            .listing.listing--medium.clearfix
+              .row.collapse
+                .small-2.columns
+                  = image_tag "User-default-post.png", :width => "30", :class => "left"
+                .small-10.columns
+                  %strong.left Username
+                  %p.left This is a notification bla bla. 
+          /Single notification
+          %a.block{href: "#"}
+            .listing.listing--medium.clearfix
+              .row.collapse
+                .small-2.columns
+                  = image_tag "User-default-post.png", :width => "30", :class => "left"
+                .small-10.columns
+                  %strong.left Username
+                  %p.left This is a notification bla bla. 
+          /Single notification
+          %a.block{href: "#"}
+            .listing.listing--medium.clearfix
+              .row.collapse
+                .small-2.columns
+                  = image_tag "User-default-post.png", :width => "30", :class => "left"
+                .small-10.columns
+                  %strong.left Username
+                  %p.left This is a notification bla bla. 
+          /Single notification
+          %a.block{href: "#"}
+            .listing.listing--medium.clearfix
+              .row.collapse
+                .small-2.columns
+                  = image_tag "User-default-post.png", :width => "30", :class => "left"
+                .small-10.columns
+                  %strong.left Username
+                  %p.left This is a notification bla bla.
+          %a.block{href: "#"}
+            .center.orange
+              %p{style: "color:#fff; margin:.5rem"} View More 
+
+      %li.has-dropdown
+        %a{href: "#"}
+          = image_tag "User-default-post.png", :width => "30"
+        %ul.dropdown
+          %li
+            %a{href: "#"} Profile
+          %li
+            %a{href: "#"} Profile Settings
+          %li
+            %a{href: "#"} Logout
+
+      %li.padding-right
+        %a.button.right.radius.small{"data-reveal-id" => "myModal", href: "#"} Post
+        #myModal.reveal-modal.small{"data-reveal" => ""}
+          %textarea{placeholder: "small-12.columns", style: "margin-top:20px;"}
+          %a.button.right.radius.small Post
+          %a.right{href: "#"}Location
+          %a.right{href: "#"}Image
+          %a.close-reveal-modal ×
+/ End Top Bar
