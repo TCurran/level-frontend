@@ -1,25 +1,38 @@
-.panel.clearfix.panel--no-padding
-  .container--full-padding
-    = image_tag "User-default.png", :class => "left"
-    .container--text-padding.left
-      %h5.no-margin-bottom 
-        %strong Username
-      %p City, State
-      %br
-    .row.left
-      .small-4.columns.small-text-center
-        .meta.meta-light Points
-        .meta.meta-dark 
-          %i.fa.fa-trophy 0
-      .small-4.columns.small-text-center
-        .meta.meta-light Followers
-        .meta.meta-dark 0
-      .small-4.columns.small-text-center
-        .meta.meta-light Following
-        .meta.meta-dark 0
-  .container--full-padding.border-top--orange.bg-gray
-    %textarea#post--small-trigger.no-margin-bottom{maxlength: "140", placeholder: "Post an update...", style: "resize:none; height:34px; min-height: 34px;", type: "text"}
-    #post--small{style: "display:none;"}
-      %a.left{href: "#"} Location
-      %a.left{href: "#"} Image
-      %button#post--small-submit.tiny.right.radius Post
+.panel.panel--no-padding
+  .small-padding--full-medium
+    .row.collapse
+      .small-3.columns
+        = image_tag "User-default.png", :class => "left"
+      .small-9.columns
+        .small-padding--l-small.container.profile--name
+          %h5.no-margin-bottom 
+            %strong Username
+          %p.no-margin City, State   
+  .small-padding--rl-medium.small-padding--b-medium.container.profile
+    .row.collapse
+      .small-4.columns.centered
+        .left
+          .meta.meta-light Rank
+          .meta.meta-dark.container.small-padding--t-small 
+            %i.fa.fa-trophy 
+            0
+      .small-4.columns.centered
+        .left
+          .meta.meta-light Followers
+          .meta.meta-dark.container.small-padding--t-small 
+            %i.fa.fa-users
+            0
+      .small-4.columns.centered
+        .right
+          .meta.meta-light Following
+          .meta.meta-dark.container.small-padding--t-small 
+            %i.fa.fa-users
+            0
+  .container.small-padding--full-medium.border-top--orange.bg-gray
+    %textarea#post--small-trigger.no-margin{maxlength: "140", placeholder: "Post an update...", style: "resize:none; height:34px; min-height: 34px;", type: "text"}
+    #post--small.small-padding--t-medium{style: "display:none;"}
+      %a{href: "#"}
+        %i.fa.fa-map-marker
+      %a{href: "#"}
+        %i.fa.fa-picture-o
+      %button#post--small-submit.tiny.radius.no-margin Post

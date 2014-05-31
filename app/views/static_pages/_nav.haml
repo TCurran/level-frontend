@@ -24,52 +24,12 @@
         %a{href: "#"} 
           %i.fa.fa-bar-chart-o 
           Stats 
-    /Notifications - show only 4 notifcations and say view more for the rest. 
+    %ul.centered
+      %li
+        %a{href: "#"}
+          %i.fa.fa-trophy
+          1,000 
     %ul.right
-      %li.has-dropdown.notifications
-        %a{"data-dropdown" => "drop", "data-options" => "align:left", href: "#"}
-          %i.fa.fa-bell
-        #drop.dropdown.content{"data-dropdown-content" => ""}
-          /Single notification
-          %a.block{href: "#"}
-            .listing.listing--medium.clearfix
-              .row.collapse
-                .small-2.columns
-                  = image_tag "User-default-post.png", :width => "30", :class => "left"
-                .small-10.columns
-                  %strong.left Username
-                  %p.left This is a notification bla bla. 
-          /Single notification
-          %a.block{href: "#"}
-            .listing.listing--medium.clearfix
-              .row.collapse
-                .small-2.columns
-                  = image_tag "User-default-post.png", :width => "30", :class => "left"
-                .small-10.columns
-                  %strong.left Username
-                  %p.left This is a notification bla bla. 
-          /Single notification
-          %a.block{href: "#"}
-            .listing.listing--medium.clearfix
-              .row.collapse
-                .small-2.columns
-                  = image_tag "User-default-post.png", :width => "30", :class => "left"
-                .small-10.columns
-                  %strong.left Username
-                  %p.left This is a notification bla bla. 
-          /Single notification
-          %a.block{href: "#"}
-            .listing.listing--medium.clearfix
-              .row.collapse
-                .small-2.columns
-                  = image_tag "User-default-post.png", :width => "30", :class => "left"
-                .small-10.columns
-                  %strong.left Username
-                  %p.left This is a notification bla bla.
-          %a.block{href: "#"}
-            .center.orange
-              %p{style: "color:#fff; margin:.5rem"} View More 
-
       %li.has-dropdown
         %a{href: "#"}
           = image_tag "User-default-post.png", :width => "30"
